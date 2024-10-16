@@ -1,0 +1,26 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <table>
+            <h1>Student Details</h1>
+            <tr>
+                <th>Number ID</th>
+                <th>Name</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Status</th>
+            </tr>
+            {% for data in mystudent %}
+            <tr>
+                <td>{{ data.student_id }}</td>
+                <td>{{ data.student_name }}</td>
+                <td>{{ data.student_phone }}</td>
+                <td>{{ data.student_email }}</td>
+                <td>{{ data.stud_status }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Borrow Details</h1>
+        <table>
+            <tr>
+                <th>Borrow ID</th>
+                <th>Book ID</th>
+                <th>Student ID</th>
+                <th>Borrow Date</th>
+                <th>Return Date</th>
+            </tr>
+            {% for data in myborrow %}
+            <tr>
+                <th>{{ data.borrow_id }}</th>
+                <th>{{ data.book_id_id }}</th>
+                <th>{{ data.student_id_id }}</th>
+                <th>{{ data.borrow_date }}</th>
+                <th>{{ data.return_date }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

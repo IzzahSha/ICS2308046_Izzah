@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+            Enter mentor id: <input type="text" name="id"><br><br>
+            Enter mentor name: <input type="text" name="name"><br><br>
+            Enter mentor room number: <input type="text" name="room"><br><br>
+            <input type="submit" value="SUBMIT"><br><br>
+        </form>
+        <a href="/izzah_page/">BACK TO HOMEPAGE</a>
+
+        <table>
+            <h4>Mentor Details</h4>
+            <tr>
+                <th>Mentor ID</th>
+                <th>Mentor Name</th>
+                <th>Room Number</th>
+            </tr>
+            {% for x in mymentor %}
+            <tr>
+                <td>{{ x.menid }}</td>
+                <td>{{ x.menname }}</td>
+                <td>{{ x.meroomno }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

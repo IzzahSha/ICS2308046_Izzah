@@ -1,0 +1,1 @@
+web : gunicorn ICS2308046_Izzah.wsgi --log-file -
